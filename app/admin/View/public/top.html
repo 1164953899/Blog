@@ -1,0 +1,11 @@
+<div class="top">
+	<h2>博客管理后台</h2>
+	<div>
+		{{if isset($smarty.session.uid)}}
+		<span>{{$smarty.session.username}}</span>
+		<a href="?m=admin&a=logout&c=home">退出</a>
+		{{else}}
+		<a href="?m=admin&a=login&c=home">登录</a>
+		{{/if}}
+	</div>
+</div>

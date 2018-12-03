@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="app/admin/view/public/style.css">
+	</head>
+	<body>
+		{{include file="public/top.html"}}
+		{{include file="public/left.html"}}
+		<div class="right">
+			<table cellpadding="5" cellspacing="0" align="center" border="1px">
+				<tr>
+					<td>博客id</td>
+					<td>用户id</td>
+					<td>用户名</td>
+					<td>标题</td>
+					<td>内容</td>
+					<td>阅读数</td>
+					<td>创建时间</td>
+					<td>修改时间</td>
+					<td>操作</td>
+				</tr>
+				{{foreach $blog as $v}}
+				<tr>
+					<td>{{$v.id}}</td>
+					<td>{{$v.uid}}</td>
+					<td>{{$v.username}}</td>
+					<td>{{$v.title}}</td>
+					<td>{{$v.content|truncate:20}}</td>
+					<td>{{$v.view}}</td>
+					<td>{{$v.create}}</td>
+					<td>{{$v.update}}</td>
+					<td>
+						<a href="">查看</a>
+						<a href="?m=admin&c=home&a=deleteblog&bid={{$v.id}}"
+						>删除</a>
+					</td>
+				</tr>
+				{{/foreach}}
+				<tr>
+					<td colspan="9">{{$page->show()}}</td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>

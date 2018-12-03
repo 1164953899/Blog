@@ -1,0 +1,38 @@
+.top {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	height: 64px;
+	background-color: rgba(50, 150, 222, 0.5);
+}
+
+.top>div {
+	float: right;
+}
+
+.top>h2 {
+	float: left;
+}
+
+.left {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	top: 64px;
+	width: 180px;
+	background-color: rgba(150, 50, 222, 0.5);
+}
+
+.right {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	top: 64px;
+	left: 180px;
+	background-color: rgba(150, 250, 22, 0.5);
+	overflow-y: scroll;/* 超出部分可以滚动显示 */
+}
+table{
+	text-align: center;
+}

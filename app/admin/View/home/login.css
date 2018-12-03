@@ -1,0 +1,86 @@
+.nav a:hover{
+				text-decoration:underline;
+			}
+			
+			*{
+				margin: 0;
+				padding: 0;
+			}
+
+			.d1{
+				float: left;
+				margin-left: 50px;
+				margin-top: 70px;
+			}
+			.d1 img{
+				float: left;
+				height: 400px;
+				width: 600px;
+			}
+			.d2{
+				float: left;
+				background-color:white;
+				width: 500px;
+				height: 401px;
+				margin-top: 70px;
+			}
+			.a1{
+				margin-top: 40px;
+				margin-left: 30px;
+		     }
+			.text{
+				margin-top: 50px;
+				margin-left: 36px;
+			}
+			.text input{
+				height: 25px;
+				width: 200px;
+			}
+			.pwd{
+				margin-top: 20px;
+				margin-left: 20px;
+			}
+			.pwd input{
+				height: 25px;
+				width: 200px;
+			}
+			.bd{
+				width: 1200px;
+				height: 560px;
+				margin: 0 auto;
+				margin-top:70px;
+				border-radius: 5px;
+				background:white;
+		/*		 -webkit-box-shadow:2px 2px 5px #333333;*/
+				  box-shadow:2px 2px 5px #333333;
+			}
+			.d2 table{
+				width: 400px;
+				margin:0 auto;
+			}
+			.d2 tr{
+				width: 300px;
+				height: 54px;
+				text-align: center;
+			}
+			.d2 input{
+				width: 300px;
+				height: 30px;
+			}
+			.d2 th{
+				font-size: 25px;
+			}
+			button{
+				width: 120px;
+				height: 40px;
+				font-size:18px;
+				border-radius: 8px;
+				border: none;
+				background: darkseagreen;
+				margin-top: 40px;
+				color: white;
+				box-shadow:1px 1px 2px #333333;
+			}
+			.div2{
+				border-top: 3px solid green;
+				margin-top: 10px;
